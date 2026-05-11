@@ -1,0 +1,20 @@
+{
+  "name": "react-nx",
+  "description": "Module Federation Vite + React + Nx workspace",
+  "private": true,
+  "packageManager": "pnpm@10.28.2",
+  "workspaces": [
+    "host",
+    "remote",
+    "shared-ui"
+  ],
+  "scripts": {
+    "dev": "nx run-many -t dev --parallel=20",
+    "build": "nx run-many -t build --parallel=20",
+    "preview": "nx run-many -t preview --parallel=20",
+    "typecheck": "nx run-many -t typecheck --parallel=20"
+  },
+  "devDependencies": {
+    "nx": "^22.1.3"
+  }
+}

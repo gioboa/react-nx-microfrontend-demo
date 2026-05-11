@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "dev": {
+      "cache": false,
+      "dependsOn": [
+        "^build"
+      ],
+      "continuous": true
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/*.tsbuildinfo"
+      ]
+    },
+    "preview": {
+      "cache": false,
+      "dependsOn": [
+        "build"
+      ],
+      "continuous": true
+    },
+    "typecheck": {
+      "cache": false
+    }
+  },
+  "parallel": 20,
+  "analytics": false
+}
