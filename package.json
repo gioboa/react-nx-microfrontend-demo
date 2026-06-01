@@ -4,9 +4,8 @@
   "private": true,
   "packageManager": "pnpm@10.28.2",
   "workspaces": [
-    "host",
-    "remote",
-    "shared-ui"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "dev": "nx run-many -t dev --parallel=20",
@@ -15,6 +14,6 @@
     "typecheck": "nx run-many -t typecheck --parallel=20"
   },
   "devDependencies": {
-    "nx": "^22.1.3"
+    "nx": "22.7.5"
   }
 }

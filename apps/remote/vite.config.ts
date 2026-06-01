@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   return {
     server: {
       fs: {
-        allow: [".", "..", "../shared"],
+        allow: [".", "..", "../..", "../../packages/shared"],
       },
     },
     build: {
