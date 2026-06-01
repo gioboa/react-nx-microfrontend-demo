@@ -1,7 +1,6 @@
 packages:
-  - host
-  - remote
-  - shared-ui
+  - apps/*
+  - packages/*
 
 catalog:
   "@module-federation/vite": ^1.15.4
